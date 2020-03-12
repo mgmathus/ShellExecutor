@@ -48,7 +48,7 @@ class ShellExecutor {
     static final boolean isMacOsX;
 
     static {
-        String osName = System.getProperty("os.name");
+        String osName = System.getProperty("os.name").toLowerCase();
         isWindows = osName.startsWith("windows");
         isMacOsX = osName.startsWith("mac") || osName.startsWith("darwin");
     }
